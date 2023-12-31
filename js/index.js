@@ -14,10 +14,10 @@ tailwind.config = {
 const loadTheme = () => {
   if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
     document.documentElement.classList.add('dark')
-    document.getElementById('icon_dark').src = '/icons/sun.svg'
+    document.getElementById('icon_dark').src = 'icons/sun.svg'
   } else {
     document.documentElement.classList.remove('dark')
-    document.getElementById('icon_dark').src = '/icons/moon.svg'
+    document.getElementById('icon_dark').src = 'icons/moon.svg'
   }
 }
 
