@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+    
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/index.js"></script>
+  
+  <title>SGPA Percentage Calculator</title>
+  <meta name="description" content="Calicut University SGPA Calculator: Instantly calculate your semester & overall SGPA percentage with ease. Accurate, simple, and free!" />
+  
+</head>
+<body class="container mx-auto p-10 bg-gray-100">
+	<h1 class="text-3xl font-mono font-bold text-center mb-1 m-5">
+    SGPA Calculator 
+  </h1>
+  <p class="text-gray-400 container-sm p-2 text-center">This Calculator calculate the SGPA Percentage in Calicut University</p>
+  <div class="container-sm mx-auto rounded shadow-lg bg-white">
+    <form class="container mx-auto flex-col p-5" >
+      <label>Enter SGPA:</label>
+      <div id="sgpa_container">
+        <p>Loading...</p>
+      </div>
+      <div class="w-full border border-lime-500 rounded py-1.5 my-1.5 text-lime-500 font-bold text-center" onclick="handleAdd()">Add</div>
+      <button class="w-full rounded py-1.5 my-1.5 bg-lime-500 font-bold text-white" type="button" onclick="handleSubmit()">Submit</button>
+    </form>
+  </div>
+  <div class="container-sm mx-auto rounded shadow-lg bg-white mt-5 p-3">
+    <h2 class="text-xl font-mono font-bold">Your Total SGPA: <span id="sgpa">0</span></h2>
+  </div>
+</body>
+</html>
