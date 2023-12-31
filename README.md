@@ -24,4 +24,4 @@ We welcome contributions to improve the calculator! Feel free to fork the reposi
 
 ## Live Demo
 
-[Link to live demo (if available)]
+Click Here to see :- [**Preview**](https://rameesjahan.me/Total-SGPA/)
