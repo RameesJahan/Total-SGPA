@@ -1,4 +1,4 @@
- **# Calicut University SGPA Calculator**
+# **# Calicut University SGPA Calculator**
 
 **Effortlessly calculate your SGPA percentage with this simple tool built using pure HTML, CSS, and JavaScript.**
 
