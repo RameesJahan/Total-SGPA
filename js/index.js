@@ -20,12 +20,12 @@ const loadInput = () => {
     if(i>0){ 
       //if sgpa list has morethan 1 item add delete button 
       data +=`<div class="flex border rounded mt-1.5 overflow-hidden">
-                <input class="w-full p-1.5 outline-none" type="number" name="sgpa_${i+1}" id="sgpa_${i+1}" placeholder="Enter SGPA ${i+1}" onchange="updateInput(this,${i})" value="${item}"/>
+                <input class="w-full p-1.5 outline-none" type="number" name="sgpa_${i+1}" id="sgpa_${i+1}" placeholder="Enter SGPA for Sem ${i+1}" onchange="updateInput(this,${i})" value="${item}"/>
                 <img class="w-[24px] m-1.5 p-0.5 shrink" src="icons/trash.svg" alt="Delete" onclick="handleDel(${i})" />
               </div>`
     }else{
       data +=`<div class="border rounded mt-1.5 overflow-hidden">
-                <input class="w-full p-1.5 outline-none" type="number" name="sgpa_${i+1}" id="sgpa_${i+1}" placeholder="Enter SGPA ${i+1}" onchange="updateInput(this,${i})" value="${item}"/>
+                <input class="w-full p-1.5 outline-none" type="number" name="sgpa_${i+1}" id="sgpa_${i+1}" placeholder="Enter SGPA for Sem ${i+1}" onchange="updateInput(this,${i})" value="${item}"/>
               </div>`
     }
   })
