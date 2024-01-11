@@ -78,8 +78,11 @@ const handleSubmit = () => {
   let sem = getSem(sgpa_list)
   if(sem>0){
     sum=getSum(sgpa_list)
-    total_sgpa = (sum/(sem*10))*100
-    document.getElementById('sgpa').innerText=Number((total_sgpa).toFixed(2))+"%"
+    sgpa = (sum/(sem*10))
+    total_sgpa = sgpa*10
+    sgpa_perc = sgpa*100
+    document.getElementById('sgpa').innerText=Number((total_sgpa).toFixed(4))
+    document.getElementById('sgpa_p').innerText=Number((sgpa_perc).toFixed(2))+"%"
   }
   sgpa_list=['']
   loadInput()
